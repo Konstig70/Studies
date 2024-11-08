@@ -4,5 +4,5 @@
 *.sln
 bin/
 obj/
-"Flappy bird.csproj"
+.csproj
 Content/
