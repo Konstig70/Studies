@@ -1,0 +1,8 @@
+.idea/
+*.png
+*.jpg
+*.sln
+bin/
+obj/
+"Flappy bird.csproj"
+Content/
