@@ -59,7 +59,9 @@ tmp/
 *~.nib
 local.properties
 .loadpath
-
+*.eml
+.classpath
+.project
 ##############################
 ## NetBeans
 ##############################
@@ -70,7 +72,7 @@ dist/
 nbdist/
 nbactions.xml
 nb-configuration.xml
-
+build.fxbuild
 ##############################
 ## OS X
 ##############################
