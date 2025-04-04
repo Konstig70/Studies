@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxReissu.ReissuGUIController">
+   <center>
+      <GridPane prefHeight="177.0" prefWidth="446.0" BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <TextField fx:id="ReissuPvm" promptText="Syötä pvm" GridPane.columnIndex="1">
+               <GridPane.margin>
+                  <Insets right="5.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField fx:id="ReissuSijainti" promptText="Syötä sijainti" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets right="5.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField fx:id="ReissuKeli" promptText="Syötä keli" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets right="5.0" />
+               </GridPane.margin>
+            </TextField>
+            <Label text="Reissu">
+               <GridPane.margin>
+                  <Insets left="5.0" />
+               </GridPane.margin>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label text="Sijainti" GridPane.rowIndex="1">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="5.0" />
+               </GridPane.margin>
+            </Label>
+            <Label text="Keli" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets left="5.0" />
+               </GridPane.margin>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label text="Kalat" GridPane.rowIndex="3">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="5.0" />
+               </GridPane.margin>
+            </Label>
+         </children>
+      </GridPane>
+   </center>
+   <bottom>
+      <BorderPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <top>
+            <TextArea fx:id="ReissunSaalis" editable="false" prefHeight="200.0" prefWidth="200.0" text="&#10;" BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets bottom="10.0" left="15.0" right="15.0" />
+               </BorderPane.margin>
+            </TextArea>
+         </top>
+         <left>
+            <Button mnemonicParsing="false" onAction="#handlePoista" text="Poista" BorderPane.alignment="CENTER">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <BorderPane.margin>
+                  <Insets bottom="5.0" left="5.0" />
+               </BorderPane.margin>
+            </Button>
+         </left>
+         <right>
+            <Button fx:id="jatkaNappi" mnemonicParsing="false" onAction="#handleJatka" text="Jatka" BorderPane.alignment="CENTER">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <BorderPane.margin>
+                  <Insets bottom="5.0" right="5.0" />
+               </BorderPane.margin>
+            </Button>
+         </right>
+         <center>
+            <Button mnemonicParsing="false" onAction="#handleLisaa" text="Lisää kaloja" BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets bottom="5.0" />
+               </BorderPane.margin>
+            </Button>
+         </center>
+      </BorderPane>
+   </bottom>
+</BorderPane>

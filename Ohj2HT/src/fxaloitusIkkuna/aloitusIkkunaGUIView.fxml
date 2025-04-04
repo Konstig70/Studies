@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.media.MediaView?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane prefHeight="303.0" prefWidth="388.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxaloitusIkkuna.aloitusIkkunaGUIController">
+   <top>
+      <Text fx:id="textField" strokeType="OUTSIDE" strokeWidth="0.0" text="Tervetuloa!" textAlignment="CENTER" wrappingWidth="88.66833686828613" BorderPane.alignment="CENTER">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+   </top>
+   <right>
+      <Button mnemonicParsing="false" onAction="#handleJatka" prefHeight="29.0" prefWidth="58.0" text="Jatka" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets right="10.0" />
+         </BorderPane.margin>
+      </Button>
+   </right>
+   <left>
+      <Button mnemonicParsing="false" onAction="#handleTakaisin" prefHeight="32.0" prefWidth="66.0" text="Takaisin" textAlignment="CENTER" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets left="10.0" />
+         </BorderPane.margin>
+      </Button>
+   </left>
+   <bottom>
+      <Button mnemonicParsing="false" onAction="#handleOhje" prefHeight="27.0" prefWidth="61.0" text="Ohje" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets bottom="10.0" />
+         </BorderPane.margin>
+      </Button>
+   </bottom>
+   <center>
+      <MediaView fx:id="pyorivaKala" fitHeight="200.0" fitWidth="200.0" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>
